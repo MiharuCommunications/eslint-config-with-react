@@ -34,5 +34,7 @@ module.exports = {
 
     'no-alert': ['off'],
     'no-console': ['off'],
+
+    'jsx-a11y/label-has-associated-control': ['error', { assert: "either" }],
   },
 };
