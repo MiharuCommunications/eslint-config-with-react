@@ -7,7 +7,7 @@ const current = path.resolve('.');
 
 if (working === current) {
   // install to develop
-  fs.writeFileSync('use', '');
+  fs.writeFileSync('develop', '');
 } else {
   // install to use
   fs.writeFileSync('use', '');
