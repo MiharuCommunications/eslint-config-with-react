@@ -1,12 +1,12 @@
 {
   "name": "@miharu/eslint-config-with-react",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A set of ESLint rules",
   "main": "rules/.eslintrc.js",
   "scripts": {
     "prepublish": "tsc",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "postinstall": "node ./bin install.js"
+    "postinstall": "node ./bin/install.js"
   },
   "repository": {
     "type": "git",
