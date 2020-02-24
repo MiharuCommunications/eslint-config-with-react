@@ -6,9 +6,9 @@
   "scripts": {
     "build": "tsc",
     "clean": "jake clean",
-    "prepare": "npm run clean && npm run build",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "postinstall": "node ./bin/install.js"
+    "prepublishOnly": "npm run clean && npm run build",
+    "prepare": "node ./bin/install.js",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,7 @@
   "dependencies": {},
   "peerDependencies": {},
   "devDependencies": {
+    "@types/node": "^13.7.4",
     "@typescript-eslint/eslint-plugin": "^2.20.0",
     "@typescript-eslint/parser": "^2.20.0",
     "del": "^5.1.0",
