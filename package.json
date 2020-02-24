@@ -6,8 +6,8 @@
   "scripts": {
     "build": "tsc",
     "clean": "jake clean",
-    "prepublishOnly": "not-in-install && npm run clean && npm run build || in-install",
-    "postinstall": "node bin/install.js",
+    "prepublishOnly": "npm run clean && npm run build",
+    "install": "node bin/install.js",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "bin": {
