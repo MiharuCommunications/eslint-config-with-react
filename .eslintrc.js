@@ -4,5 +4,11 @@ module.exports = {
     "./rules/.eslintrc.js",
   ],
 
-  overrides: [],
+  parserOptions: {
+    project: './tsconfig.json',
+  },
+
+  ignorePatterns: [
+    "node_modules/",
+  ],
 };

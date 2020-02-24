@@ -7,13 +7,6 @@ module.exports = {
   extends: [
     "airbnb-typescript",
   ],
-  parserOptions: {
-    project: './tsconfig.json',
-  },
-
-  ignorePatterns: [
-    "node_modules/",
-  ],
 
   rules: {
     'no-restricted-syntax': [

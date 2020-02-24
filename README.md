@@ -6,5 +6,22 @@ ESLint のルールセット
 
 
 ```
-yarn add -D @miharu/eslint-config-with-react
+yarn add -D typescript @miharu/eslint-config-with-react
+```
+
+
+```js
+module.exports = {
+  root: true,
+  extends: [
+    "@miharu/eslint-config-with-react",
+  ],
+  parserOptions: {
+    project: './tsconfig.json',
+  },
+
+  ignorePatterns: [
+    "node_modules/",
+  ],
+};
 ```

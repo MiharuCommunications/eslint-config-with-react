@@ -1,13 +1,12 @@
 {
   "name": "@miharu/eslint-config-with-react",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "A set of ESLint rules",
   "main": "rules/.eslintrc.js",
   "scripts": {
     "build": "tsc",
     "clean": "jake clean",
     "prepublishOnly": "npm run clean && npm run build",
-    "postinstall": "node scripts/postinstall.js",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "bin": {
@@ -27,25 +26,27 @@
     "LICENSE",
     "bin/**/*.js",
     "lib/**/*.js",
-    "scripts/**/*.js",
     "rules/**/*.js",
     "README.md"
   ],
   "author": "inahata",
   "license": "MIT",
-  "dependencies": {},
-  "peerDependencies": {},
-  "devDependencies": {
-    "@types/node": "^13.7.4",
+  "dependencies": {
     "@typescript-eslint/eslint-plugin": "^2.20.0",
     "@typescript-eslint/parser": "^2.20.0",
-    "del": "^5.1.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-typescript": "^7.0.0",
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.18.3",
-    "eslint-plugin-react-hooks": "^2.4.0",
+    "eslint-plugin-react-hooks": "^2.4.0"
+  },
+  "peerDependencies": {
+    "typescript": "^3.8.0 || ^3.7.0 || ^3.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^13.7.4",
+    "del": "^5.1.0",
     "jake": "^10.4.5",
     "typescript": "^3.8.2"
   }
