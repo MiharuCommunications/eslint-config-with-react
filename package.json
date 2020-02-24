@@ -1,0 +1,39 @@
+{
+  "name": "@miharu/eslint-config-with-react",
+  "version": "0.0.1",
+  "description": "A set of ESLint rules",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "postinstall": "node ./bin install.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MiharuCommunications/eslint-config-with-react"
+  },
+  "keywords": [
+    "config",
+    "eslint",
+    "eslintconfig",
+    "typescript"
+  ],
+  "files": [
+    "LICENSE",
+    ".eslintrc.js",
+    "README.md"
+  ],
+  "author": "inahata",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.20.0",
+    "@typescript-eslint/parser": "^2.20.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-typescript": "^7.0.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.18.3",
+    "eslint-plugin-react-hooks": "^2.4.0",
+    "typescript": "^3.8.2"
+  }
+}
