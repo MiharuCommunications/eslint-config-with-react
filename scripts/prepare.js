@@ -1,1 +1,1 @@
-console.log('prepare');
+console.error('prepare');

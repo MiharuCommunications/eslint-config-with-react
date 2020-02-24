@@ -1,1 +1,1 @@
-console.log('postinstall');
+console.error('postinstall');

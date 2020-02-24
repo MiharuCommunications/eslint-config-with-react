@@ -1,1 +1,1 @@
-console.log('build');
+console.error('build');

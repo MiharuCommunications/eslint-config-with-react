@@ -1,1 +1,1 @@
-console.log('install');
+console.error('install');
