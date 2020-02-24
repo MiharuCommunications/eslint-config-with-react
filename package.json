@@ -7,8 +7,10 @@
     "build": "tsc",
     "clean": "jake clean",
     "prepublishOnly": "npm run clean && npm run build",
-    "prepare": "node ./bin/install.js",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+  },
+  "bin": {
+    "init-eslint-config": "./bin/install.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +21,13 @@
     "eslint",
     "eslintconfig",
     "typescript"
+  ],
+  "files": [
+    "LICENSE",
+    "bin/**/*.js",
+    "lib/**/*.js",
+    "rules/**/*.js",
+    "README.md"
   ],
   "author": "inahata",
   "license": "MIT",
