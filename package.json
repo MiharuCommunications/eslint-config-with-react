@@ -1,12 +1,13 @@
 {
   "name": "@miharu/eslint-config-with-react",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A set of ESLint rules",
   "main": "rules/.eslintrc.js",
   "scripts": {
     "build": "tsc",
     "clean": "jake clean",
-    "prepublishOnly": "npm run clean && npm run build",
+    "prepublishOnly": "not-in-install && npm run clean && npm run build || in-install",
+    "postinstall": "node bin/install.js",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "bin": {
