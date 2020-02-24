@@ -1,9 +1,10 @@
 {
   "name": "@miharu/eslint-config-with-react",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A set of ESLint rules",
-  "main": ".eslintrc.js",
+  "main": "rules/.eslintrc.js",
   "scripts": {
+    "prepublish": "tsc",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "postinstall": "node ./bin install.js"
   },
@@ -17,14 +18,10 @@
     "eslintconfig",
     "typescript"
   ],
-  "files": [
-    "LICENSE",
-    ".eslintrc.js",
-    "README.md"
-  ],
   "author": "inahata",
   "license": "MIT",
   "dependencies": {},
+  "peerDependencies": {},
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^2.20.0",
     "@typescript-eslint/parser": "^2.20.0",
