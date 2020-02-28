@@ -38,6 +38,6 @@ module.exports = {
     'jsx-a11y/label-has-associated-control': ['error', { assert: "either" }],
 
     // 設計途中で export するものが一つしかないタイミングでエラーが出続けるので
-    'prefer-default-export': ['off'],
+    'import/prefer-default-export': ['off'],
   },
 };
