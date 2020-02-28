@@ -36,5 +36,8 @@ module.exports = {
     'no-console': ['off'],
 
     'jsx-a11y/label-has-associated-control': ['error', { assert: "either" }],
+
+    // 設計途中で export するものが一つしかないタイミングでエラーが出続けるので
+    'prefer-default-export': ['off'],
   },
 };
