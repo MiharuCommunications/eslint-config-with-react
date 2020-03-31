@@ -1,6 +1,6 @@
 {
   "name": "@miharu/eslint-config-with-react",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "A set of ESLint rules",
   "main": "rules/.eslintrc.js",
   "scripts": {
@@ -32,22 +32,19 @@
   "author": "inahata",
   "license": "MIT",
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.20.0",
-    "@typescript-eslint/parser": "^2.20.0",
-    "eslint": "^6.8.0",
-    "eslint-config-airbnb-typescript": "^7.0.0",
-    "eslint-plugin-import": "^2.20.1",
+    "@miharu/eslint-config": "^0.0.2",
+    "@typescript-eslint/eslint-plugin": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.18.3",
-    "eslint-plugin-react-hooks": "^2.4.0"
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^3.0.0"
   },
   "peerDependencies": {
     "typescript": "^3.8.0 || ^3.7.0 || ^3.6.0"
   },
   "devDependencies": {
-    "@types/node": "^13.7.4",
+    "@types/node": "^13.9.8",
     "del": "^5.1.0",
-    "jake": "^10.4.5",
-    "typescript": "^3.8.2"
+    "jake": "^10.4.6",
+    "typescript": "^3.8.3"
   }
 }
