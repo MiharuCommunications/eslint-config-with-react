@@ -20,7 +20,10 @@
   },
   "include": [
     "./bin/**/*.ts",
-    "./lib/**/*.ts"
+    "./lib/**/*.ts",
+    "./lib/**/*.tsx",
+    "./test/**/*.ts",
+    "./test/**/*.tsx"
   ],
   "exclude": [
     "./node_modules/**/*.ts",

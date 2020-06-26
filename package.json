@@ -7,7 +7,8 @@
     "build": "tsc",
     "clean": "jake clean",
     "prepublishOnly": "npm run clean && npm run build",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "test": "eslint ./test --ext .js,.jsx,.ts,.tsx"
   },
   "bin": {
     "init-eslint-config": "./bin/install.js"
@@ -43,8 +44,10 @@
   },
   "devDependencies": {
     "@types/node": "^14.0.14",
+    "@types/react": "^16.9.41",
     "del": "^5.1.0",
     "jake": "^10.8.2",
+    "react": "^16.13.1",
     "typescript": "^3.9.5"
   }
 }
