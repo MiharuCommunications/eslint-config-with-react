@@ -1,13 +1,14 @@
 {
   "name": "@miharu/eslint-config-with-react",
-  "version": "0.0.18",
+  "version": "0.0.19",
   "description": "A set of ESLint rules",
   "main": "rules/.eslintrc.js",
   "scripts": {
     "build": "tsc",
     "clean": "jake clean",
     "prepublishOnly": "npm run clean && npm run build",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "test": "eslint ./test --ext .js,.jsx,.ts,.tsx"
   },
   "bin": {
     "init-eslint-config": "./bin/install.js"
@@ -32,19 +33,21 @@
   "author": "inahata",
   "license": "MIT",
   "dependencies": {
-    "@miharu/eslint-config": "^0.0.3",
-    "@typescript-eslint/eslint-plugin": "^2.28.0",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.19.0",
-    "eslint-plugin-react-hooks": "^3.0.0"
+    "@miharu/eslint-config": "^0.0.4",
+    "@typescript-eslint/eslint-plugin": "^3.4.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^4.0.4"
   },
   "peerDependencies": {
     "typescript": "^3.8.0 || ^3.7.0 || ^3.6.0"
   },
   "devDependencies": {
-    "@types/node": "^13.11.1",
+    "@types/node": "^14.0.14",
+    "@types/react": "^16.9.41",
     "del": "^5.1.0",
-    "jake": "^10.4.6",
-    "typescript": "^3.8.3"
+    "jake": "^10.8.2",
+    "react": "^16.13.1",
+    "typescript": "^3.9.5"
   }
 }
