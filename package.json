@@ -1,6 +1,6 @@
 {
   "name": "@miharu/eslint-config-with-react",
-  "version": "0.0.19",
+  "version": "0.0.20",
   "description": "A set of ESLint rules",
   "main": "rules/.eslintrc.js",
   "scripts": {
