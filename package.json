@@ -33,21 +33,21 @@
   "author": "inahata",
   "license": "MIT",
   "dependencies": {
-    "@miharu/eslint-config": "^0.0.4",
-    "@typescript-eslint/eslint-plugin": "^3.4.0",
+    "@miharu/eslint-config": "^0.0.5",
+    "@typescript-eslint/eslint-plugin": "^3.9.1",
     "eslint-plugin-jsx-a11y": "^6.3.1",
-    "eslint-plugin-react": "^7.20.0",
-    "eslint-plugin-react-hooks": "^4.0.4"
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-react-hooks": "^4.1.0"
   },
   "peerDependencies": {
-    "typescript": "^3.8.0 || ^3.7.0 || ^3.6.0"
+    "typescript": "^3.9.0 || ^3.8.0 || ^3.7.0 || ^3.6.0"
   },
   "devDependencies": {
-    "@types/node": "^14.0.14",
-    "@types/react": "^16.9.41",
+    "@types/node": "^14.6.0",
+    "@types/react": "^16.9.46",
     "del": "^5.1.0",
     "jake": "^10.8.2",
     "react": "^16.13.1",
-    "typescript": "^3.9.5"
+    "typescript": "^3.9.7"
   }
 }
